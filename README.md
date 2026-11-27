@@ -12,6 +12,20 @@
 - **转 PPTX**：将生成或上传的图片重建为可编辑 PowerPoint 对象，也可下载 SVG。
 - 桌面端三步界面；API Key 仅保存在当前浏览器的 `localStorage`，不在源码中提供默认密钥。
 
+## 界面预览
+
+**1. 选择参考图**
+
+![选择参考图：论文正文子图与本地图库](assets/readme-references.png)
+
+**2. 根据论文内容生成初稿**
+
+![生成初稿：论文内容、参考图与生成画布](assets/readme-generation.png)
+
+**3. 重建为可编辑 PPTX**
+
+![转 PPTX：图片来源、重建设置与预览](assets/readme-pptx.png)
+
 ## 本地运行
 
 需要 Node.js 20.19+ 或 22.12+。
