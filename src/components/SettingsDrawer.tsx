@@ -26,7 +26,6 @@ export default function SettingsDrawer({ onClose }: Props) {
             >
               <option value="custom">自定义 / OpenAI 兼容</option>
               <option value="openai">OpenAI</option>
-              <option value="anthropic">Anthropic</option>
             </select>
           </div>
 
