@@ -1,0 +1,198 @@
+.forge {
+  width: 100%;
+}
+
+.forge-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.forge-steps {
+  display: flex;
+  gap: 8px;
+  flex: 1;
+}
+
+.step-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 18px;
+  background: transparent;
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--apple-text-secondary);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.step-btn:hover {
+  background: var(--apple-fill);
+}
+
+.step-btn.active {
+  background: var(--apple-blue);
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 122, 255, 0.3);
+}
+
+.step-btn.done {
+  color: var(--apple-green);
+}
+
+.step-num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--apple-fill);
+  color: var(--apple-text-secondary);
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 250ms;
+}
+
+.step-btn.active .step-num {
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.step-btn.done .step-num {
+  background: var(--apple-green);
+  color: white;
+}
+
+.step-label {
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+.settings-btn {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  background: var(--apple-surface);
+  border: none;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+  transition: all 200ms;
+  color: var(--apple-text);
+}
+
+.settings-btn:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-1px);
+}
+
+.forge-content {
+  background: var(--apple-surface);
+  border-radius: var(--radius-xl);
+  padding: 40px;
+  box-shadow: var(--shadow-md);
+}
+
+.step-panel h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 32px;
+  letter-spacing: -0.03em;
+  color: var(--apple-text);
+}
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--apple-text);
+  letter-spacing: -0.01em;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 15px;
+  border: 1px solid var(--apple-separator);
+  border-radius: var(--radius-md);
+  background: var(--apple-surface);
+  transition: all 200ms;
+  color: var(--apple-text);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: var(--apple-text-tertiary);
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: var(--apple-blue);
+  box-shadow: 0 0 0 4px rgba(0, 122, 255, 0.15);
+}
+
+.form-group textarea {
+  resize: vertical;
+  font-family: inherit;
+  line-height: 1.6;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 12px 24px;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-right: 12px;
+  letter-spacing: -0.01em;
+}
+
+.btn-primary {
+  background: var(--apple-blue);
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 122, 255, 0.3);
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: var(--apple-blue-hover);
+  box-shadow: 0 6px 20px rgba(0, 122, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+.btn-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background: var(--apple-fill);
+  color: var(--apple-text);
+}
+
+.btn-secondary:hover {
+  background: rgba(120, 120, 128, 0.2);
+}
+
+.hint {
+  font-size: 15px;
+  color: var(--apple-text-secondary);
+  margin-bottom: 24px;
+  line-height: 1.6;
+}

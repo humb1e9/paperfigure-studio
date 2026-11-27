@@ -1,0 +1,67 @@
+:root {
+  /* Apple System Font Stack */
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Display',
+    'Helvetica Neue', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Apple Colors */
+  --apple-blue: #007AFF;
+  --apple-blue-hover: #0051D5;
+  --apple-bg: #F5F5F7;
+  --apple-surface: #FFFFFF;
+  --apple-text: #1D1D1F;
+  --apple-text-secondary: #86868B;
+  --apple-text-tertiary: #AEAEB2;
+  --apple-separator: rgba(0, 0, 0, 0.1);
+  --apple-fill: rgba(120, 120, 128, 0.12);
+  --apple-green: #34C759;
+  --apple-orange: #FF9500;
+  --apple-red: #FF3B30;
+
+  /* Apple Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.12);
+
+  /* Apple Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--apple-text);
+  background: var(--apple-bg);
+  letter-spacing: -0.01em;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+input, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Apple-style blur backdrop */
+.backdrop-blur {
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+}
